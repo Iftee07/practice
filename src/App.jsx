@@ -1,6 +1,9 @@
+import DaisyNav from "./components/daisyNav/DaisyNav";
+
 function App() {
   return (
     <div>
+      <DaisyNav />
       <h1 className="text-2xl">Vite + React</h1>
       <div className="stats shadow">
         <div className="stat">
@@ -57,7 +60,7 @@ function App() {
           <div className="stat-title">Tasks done</div>
           <div className="stat-desc text-secondary">31 tasks remaining</div>
         </div>
-      </div>  
+      </div>
     </div>
   );
 }
