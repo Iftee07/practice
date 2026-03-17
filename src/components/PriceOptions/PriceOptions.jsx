@@ -115,10 +115,12 @@ const PriceOptions = () => {
   ];
   return (
     <div className="flex flex-col gap-y-10 px-10">
-      <h1 className="font-bold text-2xl text-center">BEST PRICES</h1>
-      {priceOptions.map((option) => (
-        <PriceOption option={option}></PriceOption>
-      ))}
+      <h1 className="font-bold text-5xl text-center">BEST PRICES</h1>
+      <div className="grid lg:grid-cols-3 gap-28 w-fit mx-auto">
+        {priceOptions.map((option) => (
+          <PriceOption option={option}></PriceOption>
+        ))}
+      </div>
     </div>
   );
 };
